@@ -1,4 +1,4 @@
-class IntegerStartState(override val detector: IntegerDetector): State(detector) {
+class IntegerStartState(override val detector: Detector): State(detector) {
 
     override val isAccepting: Boolean
         get() = false
