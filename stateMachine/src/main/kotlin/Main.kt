@@ -1,7 +1,12 @@
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val detector = IntegerDetector()
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+    println(detector.detect("123"))
+    println(detector.detect("0123"))
+    println(detector.detect("123a4"))
+    println(detector.detect("123234985723495872345"))
+    println(detector.detect("1"))
+    println(detector.detect("0"))
+    println(detector.detect(""))
+
 }
