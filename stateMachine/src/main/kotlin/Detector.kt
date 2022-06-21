@@ -11,10 +11,13 @@ abstract class Detector {
 
         for (character in characters) {
             state.consumeInput(character)
+            //println("$character $state")
         }
         val isAccepting = state.isAccepting
-        state = IntegerStartState(this)
+        resetState()
         return isAccepting
     }
+
+    abstract fun resetState()
 
 }

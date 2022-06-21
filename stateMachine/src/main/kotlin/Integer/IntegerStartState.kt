@@ -1,3 +1,9 @@
+package Integer
+
+import Detector
+import InvalidState
+import State
+
 class IntegerStartState(override val detector: Detector): State(detector) {
 
     override val isAccepting: Boolean

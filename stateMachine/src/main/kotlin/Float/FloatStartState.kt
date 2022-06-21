@@ -9,11 +9,20 @@ class FloatStartState(override val detector: Detector): State(detector) {
         get() = false
 
     override fun consumeInput(string: String) {
-        if(string in "123456789"){
-            detector.state = HasIntegerState(detector)
-        }
-        else {
-            detector.state = InvalidState(detector)
+
+        when (string) {
+            in "123456789" -> {
+                detector.state = HasIntegerState(detector)
+            }
+            "0" -> {
+                detector.state = FirstZeroState(detector)
+            }
+            "." -> {
+                detector.state = HasDecimalState(detector)
+            }
+            else -> {
+                detector.state = InvalidState(detector)
+            }
         }
     }
 }
