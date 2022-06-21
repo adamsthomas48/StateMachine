@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="DetectorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-06-21T02:34:08" hostname="DESKTOP-R8FIEFP" time="0.31">
+  <properties/>
+  <testcase name="resetState()" classname="DetectorTest" time="0.0"/>
+  <testcase name="detect()" classname="DetectorTest" time="0.306"/>
+  <testcase name="setState()" classname="DetectorTest" time="0.0"/>
+  <testcase name="getState()" classname="DetectorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

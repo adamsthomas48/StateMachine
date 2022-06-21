@@ -5,4 +5,5 @@ class InvalidState(override val detector: Detector): State(detector) {
     override fun consumeInput(string: String) {
         //No-op
     }
+
 }
