@@ -1,8 +1,18 @@
-abstract class Detector {
-    abstract var state: State
-    val special: String = "!@#$%&*\\"
+package Password
 
-    open fun detect(input: String): Boolean {
+import Detector
+import Email.EmailStartState
+import State
+
+class PasswordDetector: Detector() {
+
+    override var state: State = PasswordStartState(this)
+
+    override fun detect(input: String): Boolean{
+
+        if(input.length < 8){
+            return false
+        }
         val characters = input
             .trim()
             .split("")
@@ -19,6 +29,8 @@ abstract class Detector {
         return isAccepting
     }
 
-    abstract fun resetState()
+    override fun resetState(){
+        state = PasswordStartState(this)
+    }
 
 }
