@@ -29,4 +29,15 @@ internal class BinaryDetectorTest {
         detector.resetState()
         assertEquals(detector.state.isAccepting, false)
     }
+
+    @Test
+    fun detect() {
+        assertTrue(detector.detect("1000101"))
+        assertTrue(detector.detect("1"))
+        assertTrue(detector.detect("101"))
+        assertFalse(detector.detect("100010"))
+        assertFalse(detector.detect("000101"))
+        assertFalse(detector.detect("1234"))
+        assertFalse(detector.detect("100a01"))
+    }
 }

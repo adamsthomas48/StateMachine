@@ -29,4 +29,16 @@ internal class FloatDetectorTest {
         detector.resetState()
         assertEquals(detector.state.isAccepting, false)
     }
+
+    @Test
+    fun detect() {
+        assertTrue(detector.detect("122.12312"))
+        assertTrue(detector.detect("0.12312"))
+        assertTrue(detector.detect("0.000"))
+        assertTrue(detector.detect("122.0"))
+        assertFalse(detector.detect("122.12312.123"))
+        assertFalse(detector.detect("1232"))
+        assertFalse(detector.detect("asdfasd"))
+        assertFalse(detector.detect("122.12312a123"))
+    }
 }

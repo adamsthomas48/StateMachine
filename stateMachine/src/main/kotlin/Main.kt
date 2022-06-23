@@ -32,9 +32,9 @@ fun main(args: Array<String>) {
 //    println(binaryDetector.detect("10"))
 //    println(binaryDetector.detect("1101"))
 
-//    val emailDetector = EmailDetector()
-//    println("Email Detector...")
-//    println(emailDetector.detect("Adam.thomas@hotmail.com"))
+    val emailDetector = EmailDetector()
+    println("Email Detector...")
+    println(emailDetector.detect("Adam.thomas@hotmail.com"))
 //    println(emailDetector.detect("asdfasdfasdf"))
 //    println(emailDetector.detect("adamasdfas@thsdf@sldkfjs.com"))
 //    println(emailDetector.detect("Adam.thomas@hotmail."))

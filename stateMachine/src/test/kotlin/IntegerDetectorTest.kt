@@ -27,4 +27,16 @@ internal class IntegerDetectorTest {
         detector.resetState()
         assertEquals(detector.state.isAccepting, false)
     }
+
+    @Test
+    fun detect() {
+        assertTrue(detector.detect("1234"))
+        assertTrue(detector.detect("1"))
+        assertTrue(detector.detect("111110000"))
+        assertFalse(detector.detect("0123"))
+        assertFalse(detector.detect("123.32"))
+        assertFalse(detector.detect("asdfa"))
+        assertFalse(detector.detect("0"))
+
+    }
 }
