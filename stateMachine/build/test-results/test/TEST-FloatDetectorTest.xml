@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FloatDetectorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-06-23T05:09:37" hostname="DESKTOP-R8FIEFP" time="0.003">
+  <properties/>
+  <testcase name="resetState()" classname="FloatDetectorTest" time="0.0"/>
+  <testcase name="detect()" classname="FloatDetectorTest" time="0.002"/>
+  <testcase name="setState()" classname="FloatDetectorTest" time="0.001"/>
+  <testcase name="getState()" classname="FloatDetectorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

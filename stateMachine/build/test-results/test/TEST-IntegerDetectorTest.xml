@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IntegerDetectorTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-06-23T05:09:38" hostname="DESKTOP-R8FIEFP" time="0.006">
+  <properties/>
+  <testcase name="resetState()" classname="IntegerDetectorTest" time="0.0"/>
+  <testcase name="detect()" classname="IntegerDetectorTest" time="0.001"/>
+  <testcase name="setState()" classname="IntegerDetectorTest" time="0.001"/>
+  <testcase name="getState()" classname="IntegerDetectorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
